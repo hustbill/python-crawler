@@ -2,22 +2,11 @@
 ## filename: fetch_repo_branches.sh
 
 repository_list=(
-AGE2E-Core-Base
-AGE2E-Core-Mikroscope
-AGE2E-Core-Provisioning-Templates
-AGE2E-Tooling-MetadataService
-AGE2E-Core-DevOps-Dashboard
-AGE2E-Core-Mikroscope-Web
-AGE2E-Core-Provisioning-Workload
-AGE2E-Tooling-ReportingService
-AGE2E-Core-Infrastructure
-AGE2E-Core-Mikroscope-test
-AGE2E-Tooling-HistoricalReporting
-AGE2E-Tooling-Tools
-AGE2E-Core-Intrinsic
-AGE2E-Core-NoOp-Example
-AGE2E-Tooling-Infrastructure
-AGE2E-Workload-EP-Validation
+PP-Core-Base
+PP-Core-Mikroscope
+PP-Core-Provisioning-Templates
+PP-Tooling-MetadataService
+PP-Core-DevOps-Dashboard
 )
 
 for repo in ${repository_list[*]}
