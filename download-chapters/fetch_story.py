@@ -143,7 +143,7 @@ def main():
     # 获取排行榜首页内容
     webroot = 'http://www.cangshubao.net/'
     
-    # fetch_section(webroot)
+    fetch_section(webroot)
 
     # sort string by number inside
     alist = [
@@ -156,7 +156,7 @@ def main():
     alist.sort(key=natural_keys)
     # print(alist)
     # merge sections into one file
-    merge_txt_files()
+    # merge_txt_files()
 
 
 if __name__ == '__main__':
