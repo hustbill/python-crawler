@@ -41,7 +41,7 @@ def cleanhtml(raw_html):
 
 def fetch_section(webroot):
     print("fetch_section")
-    for page in range(1, 2):
+    for page in range(1, 1):
         print('正在下载第'+str(page)+'页小说')
 
         url = 'http://www.cangshubao.net/forum-915-'+str(page)+'.html'
