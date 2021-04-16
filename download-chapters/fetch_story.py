@@ -13,8 +13,6 @@ import re
 
 
 # Ref: https://stackoverflow.com/questions/5967500/how-to-correctly-sort-a-string-with-a-number-inside
-
-
 def atof(text):
     try:
         retval = float(text)
