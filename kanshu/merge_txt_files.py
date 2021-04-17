@@ -21,7 +21,7 @@ def natural_keys(text):
     '''
     return [atof(c) for c in re.split(r'[+-]?([0-9]+(?:[.][0-9]*)?|[.][0-9]+)', text)]
 
-def merge_txt_files(txtPath):
+def merge_txt_files(txtPath,outputFile):
     print("merge_txt_files: ")
     read_files = glob.glob(txtPath + "/*.txt")
     # sorted_files = sorted(read_files)
@@ -30,7 +30,7 @@ def merge_txt_files(txtPath):
     # print (read_files[1:20])
     # sub_files = read_files[1:20]
     sub_files = read_files
-    with open("result.txt", "wb") as outfile:
+    with open(outputFile, "wb") as outfile:
         for f in sub_files:
             with open(f, "rb") as infile:
                 print(f)
@@ -46,4 +46,5 @@ def merge_txt_files(txtPath):
 
 
 if __name__ == "__main__":
-    merge_txt_files("./txt_files")
+    outputFile = "冷枪-中日两支特种小分队生死对决-吴超著.txt"
+    merge_txt_files("./txt_files", outputFile)

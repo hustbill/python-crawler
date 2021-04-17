@@ -33,7 +33,7 @@ def findtext(part):
     for paragraph in part:
         chnstatus = countchn(str(paragraph))
         possible = chnstatus[1]
-        if possible > 0.55:         # 剔除标题行，描述行，还有上下翻页
+        if possible > 0.65:         # 剔除标题行，描述行，还有上下翻页
             l.append(paragraph)
     l_t = l[:]
     #这里需要复制一下表，在新表中再次筛选，要不然会出问题，跟Python的内存机制有关
@@ -97,7 +97,7 @@ def fetch_url_content(chapterUrl):
 
 
 def save_txt(title, content):
-    filePath = './'
+    filePath = './output_txt_files/'
     fileName = title
 
     # soup = BeautifulSoup(content, "lxml")  # 解析网页返回内容，lxml 是一个解码方式，效率比较快，被推荐使用
